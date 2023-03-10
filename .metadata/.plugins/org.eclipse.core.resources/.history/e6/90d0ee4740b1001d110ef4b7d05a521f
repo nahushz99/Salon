@@ -1,0 +1,19 @@
+package com.salon.java.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.salon.java.entity.Salon;
+
+@Service
+public interface SalonService {
+    //create
+     Salon create(Salon salon);
+
+    // get all list
+    List<Salon> getAllSalon();
+    // get single Salon of given userId
+
+    Salon getSalon(String Id);
+    }
